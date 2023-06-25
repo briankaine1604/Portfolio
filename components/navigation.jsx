@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className='navbar w-full h-fit text-gray-700 bg-white shadow p-3 md:justify-around justify-between items-center flex fixed'>
+      <div className='navbar w-full h-fit text-gray-700 bg-white shadow-lg p-3 md:justify-around justify-between items-center flex fixed z-10 opacity-90'>
         <div>
           <Link href='/'>
             <Image
