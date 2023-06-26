@@ -20,4 +20,16 @@
     .listlink{
         @apply hover:px-4 py-1 hover:shadow-lg hover:bg-black hover:rounded-2xl hover:text-white transform transition-all duration-300
     }
+
+    .myblur{
+        @apply 
+    }
+
+    .mainicon {
+        @apply  text-4xl flex justify-center align-middle flex-col w-full h-full hover:shadow-2xl shadow-inner 
+    }
+
+    .mainicontransition{
+        @apply hover:text-5xl hover:p-3  
+    }
 }
