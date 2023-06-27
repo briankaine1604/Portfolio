@@ -9,6 +9,7 @@ import Link from 'next/link';
 const MainSection = () => {
   return (
     <div className='h-4/5'>
+      <div className='w-'></div>
     <div className='border sm:h-4/5 h-full text-white w-full relative flex justify-center'>    {/*Kept getting it wrong till
                                                                                         i used the relative */}
         <div className=''><Image

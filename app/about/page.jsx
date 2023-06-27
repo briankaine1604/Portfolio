@@ -5,15 +5,16 @@ import Link from 'next/link';
 
 
 const NavBar = () => {
-  const [navState, setNavState] = useState(true);
+  const [navState, setNavState] = useState(false);
 
   const toggleNav = () => {
-    setNavState((prevState) => !prevState);
+    setNavState(prevState => !prevState);
   };
 
   return (
     <div>
-      <div className='navbar w-full h-fit text-gray-700 bg-white shadow-lg p-3 md:justify-around justify-between items-center flex fixed z-10 opacity-90'>
+      <div className='navbar w-full h-fit text-gray-700 bg-white shadow-lg p-3 md:justify-around  md:flex-row flex-col md:items-center flex fixed z-10 opacity-90'>
+        <div className='flex justify-between items-center align-middle'>
         <div>
           <Link href='/'>
             <Image
@@ -33,7 +34,8 @@ const NavBar = () => {
             <div className='w-[20] h-[3] bg-black hover:shadow-2xl'></div>
           </button>
         </div>
-        <ul className={`md:grid grid-cols-5 gap-1 md:gap-10 justify-between md:w-[600] items-center ${navState ? 'block' : 'hidden '}`}>
+        </div>
+        <ul className={`md:grid grid-cols-5 gap-1 md:gap-10 justify-between md:w-[600] items-center  pl-5 ${navState ? 'block' : 'hidden '}`}>
           <li>
             <button className='listlink'>Home</button>
           </li>

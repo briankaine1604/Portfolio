@@ -18,7 +18,7 @@
     }
 
     .listlink{
-        @apply hover:px-4 py-1 hover:shadow-lg hover:bg-black hover:rounded-2xl hover:text-white transform transition-all duration-300
+        @apply hover:px-4 py-1 hover:shadow-lg hover:bg-black hover:rounded-2xl hover:text-white transform transition-all duration-300 my-2 md:my-0
     }
 
     .myblur{
