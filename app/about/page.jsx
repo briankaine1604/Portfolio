@@ -35,7 +35,7 @@ const NavBar = () => {
           </button>
         </div>
         </div>
-        <ul className={`md:grid grid-cols-5 gap-1 md:gap-10 justify-between md:w-[600] items-center  pl-5 ${navState ? 'block' : 'hidden '}`}>
+        {<ul className={`md:grid grid-cols-5  gap-1 md:gap-10 justify-between md:w-[600] items-center box-border pl-5 ${{display:navState ? 'block' : 'hidden'}}`}>
           <li>
             <button className='listlink'>Home</button>
           </li>
@@ -51,7 +51,7 @@ const NavBar = () => {
           <li>
             <button className='listlink'>Contact</button>
           </li>
-        </ul>
+        </ul>}
       </div>
     </div>
   );
